@@ -1,0 +1,27 @@
+.navigation{
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    list-style: none;
+    gap:1rem;
+    background: navy;
+   justify-content: flex-end;
+}
+
+.navigation a{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width:800px) {
+    .navigation{
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .navigation{
+       flex-flow: column;
+      align-items: center;
+    }
+}

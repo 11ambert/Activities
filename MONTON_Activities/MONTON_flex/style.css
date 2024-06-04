@@ -1,0 +1,45 @@
+
+.container{
+    padding: 1rem;
+    height: 80vh;
+    background: #d3d3d3;
+    display: flex;
+    /* flex-direction: row-reverse;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content:center; /*MAIN AXIS*/
+    align-items: center; /*CROSS AXIS*/
+    align-content:center; /*  CROSS AXIS*/
+    gap : 1rem;
+    justify-items: flex-end;
+}
+
+#box-1{
+  order:2;
+  flex-grow : 2;
+  background: yellow;
+}
+
+.box-item{
+    flex-grow:1;
+    order:1;
+    padding:4rem;
+}
+
+.red{
+    background: tomato ;
+}
+
+.blue{
+ 
+    background: deepskyblue;
+}
+
+.green{
+    background: lightgreen;
+}
+
+.purple{
+   order : 3;
+    background: plum;
+}
