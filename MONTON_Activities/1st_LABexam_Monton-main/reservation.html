@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puting Bonbon Beach Resort</title>
+    <link rel="stylesheet" href="Css/reservation.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+
+            <ul>
+                <li class="nav-link"><a href="index.html">Home</a></li>
+                <li class="nav-link"><a href="cottages.html">Cottages</a></li>
+                <li class="nav-link"><a href="room.html">Room Rates</a></li>
+                <li class="active"><a href="reservation.html">Reservations</a></li>
+                <li class="nav-link"><a href="about.html">About Us</a></li>
+
+            </ul>
+
+        </div>
+    </header>
+    <main>
+        </div>
+        <img src="Footages/road.jpg" alt="" class="bg">
+        <form action="/submit_form.php" method="post">
+            <h2>Reservation Form</h2>
+
+            <div class="form-group">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number">Phone Number:</label>
+                <input type="tel" id="number" name="number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <input type="text" id="message" name="message" required>
+            </div>
+
+            <div class="form-group">
+                <label for="adults">Number of Adults:</label>
+                <input type="number" id="adults" name="adults" min="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="kids">Number of Children:</label>
+                <input type="number" id="kids" name="kids" min="0" required>
+            </div>
+
+            <div class="form-group">
+                <label for="stay_type">Stay Type:</label>
+                <select id="stay_type" name="stay_type" required>
+                    <option value="daytime">Daytime</option>
+                    <option value="overnight">Overnight</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit Reservation</button>
+            </div>
+
+        </form>
+
+    </main>
+    <footer>
+        <p>
+            <hr>
+            <em>
+                &copy;2024 Puting Bonbon Beach Resort. All Rights Reserved.
+            </em>
+            <hr>
+        <div>
+            <a href="https://www.facebook.com/PutingBonbon">Facebook</a>
+            <a href="+639067247602">Cell No.</a>
+        </div>
+        </p>
+    </footer>
+</body>
+
+</html>
