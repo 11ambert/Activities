@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="css/products.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Navigation Content from nav_prod.php -->
+<div class="header">
+    <p class="logo">
+        <img src="../images/logo.jpg" alt="">
+    </p>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="add_product.html">Create-Product</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="about.html">About Us</a>
+    </nav>
+        
+    <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+</div>
+
+<div class="title">
+    <div class="box-content">
+        <h2>Our<span> Products</span></h2>
+        <h3>Espresso Specials</h3>
+        <p>"These drinks are good for those looking for a stronger coffee flavor"</p>
+    </div>
+</div>
+
+<div class="container">
+    <div id="root">
+        <div class="box">
+            <div class="img-box">
+                <img class="images" src="images/latte.jpg" alt="Latte">
+            </div>
+            <div class="bottom">
+                <p>Latte</p>
+                <h2>₱ 120.00</h2>
+                <button onclick="addtocart(0)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img-box">
+                <img class="images" src="images/espresso.png" alt="Espresso">
+            </div>
+            <div class="bottom">
+                <p>Espresso</p>
+                <h2>₱ 100.00</h2>
+                <button onclick="addtocart(1)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img-box">
+                <img class="images" src="images/spanish.jpg" alt="Spanish">
+            </div>
+            <div class="bottom">
+                <p>Spanish</p>
+                <h2>₱ 140.00</h2>
+                <button onclick="addtocart(2)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img-box">
+                <img class="images" src="images/caramel.jpg" alt="Caramel">
+            </div>
+            <div class="bottom">
+                <p>Caramel</p>
+                <h2>₱ 145.00</h2>
+                <button onclick="addtocart(3)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img-box">
+                <img class="images" src="images/mocha.avif" alt="Mocha">
+            </div>
+            <div class="bottom">
+                <p>Mocha</p>
+                <h2>₱ 150.00</h2>
+                <button onclick="addtocart(4)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img-box">
+                <img class="images" src="images/dirty-chai.avif" alt="Dirty Chai">
+            </div>
+            <div class="bottom">
+                <p>Dirty Chai</p>
+                <h2>₱ 150.00</h2>
+                <button onclick="addtocart(5)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="head"><p>My Cart</p></div>
+        <div id="cartItem">Your cart is empty</div>
+        <div class="foot">
+            <h3>Total</h3>
+            <h2 id="total">₱ 0.00</h2>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <!-- Footer Content from footer_prod.php -->
+    <section class="footer">
+        <div class="share">
+            <a href="https://www.facebook.com/drip.tgm" class="fab fa-facebook-f"></a>
+            <a href="https://www.instagram.com/drip.tgm/" class="fab fa-instagram"></a>
+            <a href="https://www.tiktok.com/@smolboikurt/video/7135055264205540614?is_from_webapp=1&sender_device=pc&web_id=7357027673589646864" class="fab fa-tiktok"></a>
+        </div>
+
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="add_product.html">Create-Product</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="about.html">About Us</a>
+        </div>
+
+        <div class="credit">For <span>Educational Purpose</span> Only | All Rights Reserved.</div>
+    </section>
+    <!-- Example footer content -->
+    <p>&copy; 2024 Drip Coffee. All rights reserved.</p>
+</footer>
+
+<script src="js/product.js"></script>
+</body>
+</html>
